@@ -64,7 +64,7 @@ Le tableau suivant ne contient que des écarts relus dans les deux fichiers. Cha
 | 21 | Tableau 28, association P1 ~ P3 | 2,89 [0,97 ; 4,81] p 0,007 | 2,89 [0,98 ; 4,80] p 0,006 (T31) | 0,01 | Recalcul d'IC |
 | 22 | Tableau 28, colonne « valeur E » | présente | **absente du classeur** (T31) | — | Sortie non traçable |
 | 23 | Tableau 31, hétérogénéité | 0,31 ; 0,13 p 0,078 | 0,30 ; 0,12 p 0,091 (T35) | 0,01 | Recalcul |
-| 24 | Tableau 31, effectifs | 1 900 / 3 091 | 2 285 / 3 428 (T35) | 385 / 337 | **Effectifs divergents** |
+| 24 | Tableau 31, effectifs | 1 900 / 3 091 (somme 4 991) | 2 285 / 3 428 (T35, somme 5 713) | 385 / 337 | **Bases différentes — grief retiré (H.5)** |
 | 25 | Tableau 24, divergence ± 5 | 7,9 [0,6 ; 15,3] | 6,9 [0,6 ; 13,3] (T27) | 1,0 | Recalcul |
 | 26 | Tableau 19, repondération P1 | 69,5 ; évolution 4,2 | 70,0 ; 4,8 (T23) | 0,5 ; 0,6 | Recalcul |
 | 27 | Tableau 23, placebo « âge » | 31,6 ; −0,6 [−3,1 ; 2,0] p 0,622 | 31,2 ; −0,3 [−2,7 ; 2,2] p 0,799 (T28) | 0,4 ; 0,3 | Deux passages |

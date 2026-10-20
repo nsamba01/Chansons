@@ -6,7 +6,7 @@
 
 **Source de données auditée :** `SACO_Phase2_Tableaux_2026-10-15 (2).xlsx` — 546 861 octets — empreinte SHA-256 `3ee1133d013fbd07b7373832`.
 
-**Date de l'audit :** 20 octobre 2026. **Version :** seconde passe (partie G ajoutée).
+**Date de l'audit :** 20 octobre 2026. **Version :** troisième passe (parties G et H ajoutées).
 
 **Nature du livrable audité :** maquette de rapport (le titre du fichier porte « maquette » et la date du 19 octobre 2026), accompagnée du classeur de sorties du 15 octobre 2026. L'audit porte donc sur un état de production intermédiaire : il ne juge pas une version diffusable, il mesure ce qui reste à faire pour qu'elle le devienne.
 
@@ -24,6 +24,7 @@
 - **Partie E** — Appareil graphique et fiches de zone
 - **Partie F** — Traçabilité, reproductibilité et plan de correction
 - **Partie G** — Seconde passe de contrôles : ce que la reprise a établi
+- **Partie H** — Troisième passe : identités arithmétiques et cohérence des intervalles
 - Annexes de l'audit (artefacts, convention des blocs, récapitulatif des recommandations, empreintes)
 
 ---
@@ -42,13 +43,13 @@ Trois conséquences découlent de la nature du livrable, et elles commandent l'i
 
 ## 1. Synthèse de l'audit
 
-### 1.1 Les onze constats majeurs
+### 1.1 Les douze constats majeurs
 
 | N° | Constat | Criticité | Partie |
 |---|---|---|---|
 | 1 | Le rapport est une maquette : douze encadrés « À rédiger », annexes A et F vides, seize fiches de zone sans contexte qualitatif. Aucune interprétation n'est vérifiable. | Bloquant | A.4 |
 | 2 | Deux jeux d'estimations coexistent. Le tableau 20 et les figures 1 et 7 donnent 2,9 ; −3,6 ; 0,1 ; −3,2 pour les quatre primaires ; le classeur (T25) donne 3,1 [−4,2 ; 10,5] ; −3,1 ; 0,1 ; −3,2 pour le modèle à effets fixes et 1,9 ; −1,9 ; 0,3 ; −2,4 pour la DiD à 16 points. Aucune colonne du classeur ne reproduit les quatre valeurs du rapport. | Bloquant | B.2 |
-| 3 | La réconciliation numérique n'est ni faite ni documentée : trente-trois écarts chiffrés sont établis, dont des intervalles de confiance systématiquement plus étroits dans quatre tableaux « trois volets », et des colonnes « évolution ajustée » qui ne se reproduisent pas (10 zones sur 16 au tableau 21, 9 sur 16 au tableau 54). | Bloquant | B.3–B.5 |
+| 3 | La réconciliation numérique n'est ni faite ni documentée : trente-cinq écarts chiffrés sont établis, dont des intervalles de confiance systématiquement plus étroits dans quatre tableaux « trois volets », et des colonnes « évolution ajustée » qui ne se reproduisent pas (10 zones sur 16 au tableau 21, 9 sur 16 au tableau 54). | Bloquant | B.3–B.5 |
 | 4 | Les totaux du résumé exécutif sont des observations et non des unités : « 5 713 ménages » = 2 857 + 2 856, « 1 148 RECO » = 576 + 572. Le lecteur comprend un effectif de personnes là où le rapport compte des passages. | Majeur | D.2 |
 | 5 | Aucune correspondance entre les sorties du classeur et les tableaux du rapport : le classeur numérote T01 à T55 (T24 absent), le rapport numérote 1 à 60 ; deux tableaux du rapport (58 et 60) n'ont aucun onglet source. | Bloquant | A.3 |
 | 6 | Les codes du catalogue ne sont pas les noms des onglets (`T19_P1` contre `T19_16_zones_P1`, `T53_P1` contre `T53_sensibilite_P1`) : le rapprochement ne peut pas être automatisé, et un onglet n'est pas catalogué. | Majeur | A.2 |
@@ -57,6 +58,7 @@ Trois conséquences découlent de la nature du livrable, et elles commandent l'i
 | 9 | Deux définitions cohabitent pour un même indicateur : « carnet vu » tous ménages ou parmi les vaccinés, « connaissances » ou « connaissances déclarées (citations) », indice D3 à cinq ou six composantes, poids d'indice 0,218 ou 0,177. | Bloquant | D.1 |
 | 10 | L'inférence est correctement bornée (16 grappes, CR2, Satterthwaite, Holm à 1,000) mais l'appareil de décision — grille des cas A à E, seuils de 5, 11, 8 et 0,25 point, EMD — n'est défini qu'en note de figure, jamais rappelé là où il sert, et l'EMD dépasse le seuil pour trois des quatre indicateurs primaires, ce qui interdit toute conclusion de pertinence. La grille ne se reproduit pas : la lettre de P2 diffère entre le rapport et le classeur, quatre EMD sur neuf diffèrent de 20 à 80 %, et aucune règle unique ne restitue les neuf lettres. | Majeur | D.3, G.4 |
 | 11 | Deux indicateurs primaires sur quatre sont déséquilibrés à l'inclusion bien au-delà de la bande de ± 0,10 de la figure 4 (P3 : 0,376 ; P4 : 0,275), et deux covariables également (instruction : 0,35 ; taille du ménage : −0,32) ; le déséquilibre de P3 s'aggrave à T1 (0,431) par réduction de variance. Ni la figure 4 ni le texte ne le signalent. | Majeur | D.5 |
+| 12 | Le chapitre de l'équité ne peut pas conclure : 23 séries de quintiles sur 32 ne sont pas monotones (jusqu'à 20,9 points de rupture), 12 indices d'Erreygers sur 24 ont un intervalle contenant zéro, et 11 des 12 séries évoluent dans le même sens dans les deux bras. Le titre « Gradient par quintile » engage une conclusion que les données n'autorisent pas. | Bloquant | H.4 |
 
 ### 1.2 Ce que l'audit ne met pas en cause
 
@@ -74,6 +76,7 @@ Autrement dit : le problème n'est pas la science, c'est la chaîne de productio
 4. **Reconstruire la figure 15** à partir du tableau 34 et du tableau 56, et supprimer les figures en doublon.
 5. **Décider du format de chaque sortie** : 78 onglets ne peuvent pas devenir 60 tableaux. La partie C tranche, onglet par onglet, entre corps du rapport (A), simplification (B), figure (C), tableau de synthèse (D) et annexe (E).
 6. **Publier la table de décision de la grille des cas** et l'appliquer par script (REC-022) : c'est l'appareil qui fonde chaque conclusion de pertinence, et il n'est aujourd'hui ni reproductible ni cohérent d'un document à l'autre.
+8. **Réécrire le chapitre 8** comme un constat d'absence d'effet différentiel sur l'équité, et non comme la description d'un gradient (REC-026).
 7. **Corriger le vocabulaire des effectifs** : parler d'observations quand il s'agit de passages, d'unités quand il s'agit de personnes ou d'établissements, et donner systématiquement le n par passage.
 
 ### 1.4 Chiffres clés de l'inventaire
@@ -91,7 +94,7 @@ Autrement dit : le problème n'est pas la science, c'est la chaîne de productio
 | Encadrés « À rédiger » | 12 (un par chapitre sans texte) |
 | Fiches de zone | 16, de 22 indicateurs chacune |
 | Prose rédigée | ≈ 5 175 mots pour 13 chapitres et 7 annexes |
-| Écarts chiffrés documentés | 33, dont 31 engageant la reproductibilité |
+| Écarts chiffrés documentés | 35, dont 32 engageant la reproductibilité |
 
 ---
 
@@ -117,6 +120,8 @@ L'audit a été conduit en sept étapes séquentielles, chacune produisant un ar
 
 **Étape 8 — Seconde passe de vérification.** Les constats de la première passe ont été repris un par un, avec trois objets : vérifier les affirmations qui reposaient sur une lecture unique, chercher ce qui n'avait pas été regardé (colonne `n` du tableau 60, lignes de synthèse du tableau 57, identité de la cascade maternelle, lettres de cas), et retirer les soupçons non confirmés. Cette passe a ajouté cinq constats, corrigé deux affirmations et retiré un grief ; elle fait l'objet de la partie G. Elle a aussi nécessité de reconstruire l'accès au classeur, celui-ci ne s'ouvrant pas avec une bibliothèque standard (voir REC-014).
 
+**Étape 9 — Contrôles d'identité arithmétique.** Troisième passe : vérification systématique des identités que tout tableau doit respecter (évolution = T1 − T0 ; écart à la moyenne = évolution ajustée − moyenne de province ; effectifs d'un tableau de mouvements = effectifs d'appariement ; somme des pourcentages), puis test de cohérence des intervalles de confiance au regard des effectifs affichés. Cette passe a localisé la divergence des tableaux de zone dans la seule colonne d'ajustement, établi la réconciliation exacte des tableaux de mouvements, révélé que 5 CAC sortent de la grille de progression déclarée et montré que le chapitre de l'équité ne peut pas conclure (partie H). Elle a aussi retiré deux griefs de la première passe.
+
 ### 2.2 Conventions de comparaison
 
 **Unités.** Les indicateurs de type indice sont exprimés sur une échelle 0–100 et les écarts en **points de pourcentage** de cette échelle, notés « pts ». Les indices de domaine sont exprimés en **écarts-types** de la référence témoin à T0, notés « écart-type ». Aucune confusion entre points de pourcentage et pourcentage relatif n'est admise dans les recommandations : un passage de 30,3 % à 38,9 % est une hausse de 8,6 pts, soit +28,4 % en relatif, et les deux formulations ne sont jamais interchangeables.
@@ -137,7 +142,7 @@ Quatre limites doivent être explicitées.
 
 **L'audit ne porte pas sur le volet qualitatif.** Les encadrés « Contexte (volet qualitatif) » des fiches de zone renvoient à une source non fournie ; ils ont été constatés vides, non jugés.
 
-**Le dénombrement des divergences est un dénombrement de cas établis, non une estimation d'exhaustivité.** Trente-trois écarts chiffrés sont documentés dans les parties B (tableau B.3) et G (tableau G.6). Ils sont certains. Ils ne prétendent pas couvrir toutes les cellules des 61 appariements : la fragmentation des objets Word (jusqu'à 17 objets sous une même légende) rend une comparaison automatique intégrale non fiable, et l'audit a préféré publier peu de cas certains plutôt qu'un compte global qu'il n'aurait pas pu défendre ligne à ligne. Ce choix est lui-même un constat : un rapport dont les tableaux ne peuvent pas être comparés automatiquement n'est pas auditable en routine.
+**Le dénombrement des divergences est un dénombrement de cas établis, non une estimation d'exhaustivité.** Trente-cinq écarts chiffrés sont documentés dans les parties B (tableau B.3), G (tableau G.6) et H (tableau H.7). Ils sont certains. Ils ne prétendent pas couvrir toutes les cellules des 61 appariements : la fragmentation des objets Word (jusqu'à 17 objets sous une même légende) rend une comparaison automatique intégrale non fiable, et l'audit a préféré publier peu de cas certains plutôt qu'un compte global qu'il n'aurait pas pu défendre ligne à ligne. Ce choix est lui-même un constat : un rapport dont les tableaux ne peuvent pas être comparés automatiquement n'est pas auditable en routine.
 ---
 
 # PARTIE A — Inventaire, architecture documentaire et complétude
@@ -358,7 +363,7 @@ Le tableau suivant ne contient que des écarts relus dans les deux fichiers. Cha
 | 21 | Tableau 28, association P1 ~ P3 | 2,89 [0,97 ; 4,81] p 0,007 | 2,89 [0,98 ; 4,80] p 0,006 (T31) | 0,01 | Recalcul d'IC |
 | 22 | Tableau 28, colonne « valeur E » | présente | **absente du classeur** (T31) | — | Sortie non traçable |
 | 23 | Tableau 31, hétérogénéité | 0,31 ; 0,13 p 0,078 | 0,30 ; 0,12 p 0,091 (T35) | 0,01 | Recalcul |
-| 24 | Tableau 31, effectifs | 1 900 / 3 091 | 2 285 / 3 428 (T35) | 385 / 337 | **Effectifs divergents** |
+| 24 | Tableau 31, effectifs | 1 900 / 3 091 (somme 4 991) | 2 285 / 3 428 (T35, somme 5 713) | 385 / 337 | **Bases différentes — grief retiré (H.5)** |
 | 25 | Tableau 24, divergence ± 5 | 7,9 [0,6 ; 15,3] | 6,9 [0,6 ; 13,3] (T27) | 1,0 | Recalcul |
 | 26 | Tableau 19, repondération P1 | 69,5 ; évolution 4,2 | 70,0 ; 4,8 (T23) | 0,5 ; 0,6 | Recalcul |
 | 27 | Tableau 23, placebo « âge » | 31,6 ; −0,6 [−3,1 ; 2,0] p 0,622 | 31,2 ; −0,3 [−2,7 ; 2,2] p 0,799 (T28) | 0,4 ; 0,3 | Deux passages |
@@ -1028,7 +1033,7 @@ La correction ne peut pas être conduite chapitre par chapitre : elle dépend d'
 |---:|---|---|---|
 | 5 | Régénérer les sorties d'estimation avec version et journal | REC-005, REC-014 | Traçabilité |
 | 6 | Recalculer les 5 tableaux « trois volets », les 7 matrices de sensibilité et le tableau 41 | REC-006 | Supprime 4 modes de défaillance |
-| 7 | Recalculer les colonnes « évolution ajustée » des tableaux 21 et 54 | REC-006 | Supprime 19 zones divergentes |
+| 7 | Recalculer les colonnes « évolution ajustée » des tableaux 21 et 54 et écrire la règle | REC-006, REC-023 | Supprime 38 cellules divergentes |
 | 8 | Décrire la repondération de second niveau et livrer la table de poids | REC-020 | Explique un rapport de poids de 11 |
 | 9 | Documenter la co-couverture, puis reconstruire la figure 15 et reprendre 7 figures | REC-012, REC-021 | Appareil graphique fiable et cascade vérifiable |
 | 10 | Régénérer les 16 fiches de zone sur le modèle refondu | REC-013 | Support décentralisé utilisable |
@@ -1045,7 +1050,7 @@ La correction ne peut pas être conduite chapitre par chapitre : elle dépend d'
 | 16 | Commenter la variante « sans L6_recent » | REC-011 | Honnêteté de la sensibilité |
 | 17 | Passer les six contrôles automatiques | REC-015 | Zéro défaut mécanique |
 
-Le total des charges chiffrées dans les blocs de recommandation s'élève à **29 jours-personne** hors rédaction des chapitres, laquelle représente l'essentiel du reste à faire et ne peut pas être estimée par l'auditeur sans connaître l'ambition éditoriale du commanditaire. À titre indicatif, un rapport de 40 à 60 pages rédigé à partir de ce matériau demande 15 à 25 jours d'auteur.
+Le total des charges chiffrées dans les blocs de recommandation s'élève à **32,5 jours-personne** hors rédaction des chapitres, laquelle représente l'essentiel du reste à faire et ne peut pas être estimée par l'auditeur sans connaître l'ambition éditoriale du commanditaire. À titre indicatif, un rapport de 40 à 60 pages rédigé à partir de ce matériau demande 15 à 25 jours d'auteur.
 
 > **REC-016 — Exécuter le tri des 78 onglets** *(majeur)*
 
@@ -1113,9 +1118,10 @@ Le total des charges chiffrées dans les blocs de recommandation s'élève à **
 3. **Une correspondance traçable** entre chaque tableau et un onglet existant (REC-001, REC-014).
 4. **Un appareil graphique sans figure vide ni titre tronqué** (REC-012).
 5. **Une grille des cas reproductible** — lettre identique dans le rapport et dans le classeur, EMD identiques, table de décision publiée (REC-022).
-6. **Un texte rédigé** — au minimum le résumé exécutif, les chapitres 6, 11 et 13, et l'annexe A (REC-017).
+6. **Un chapitre 8 conforme à ses données** — pas de gradient affirmé sans monotonie, pas d'effet sur l'équité sans différence entre bras (REC-026).
+7. **Un texte rédigé** — au minimum le résumé exécutif, les chapitres 6, 8, 11 et 13, et l'annexe A (REC-017).
 
-Les conditions 1 à 5 sont mécaniques et peuvent être levées en une douzaine de jours. La sixième est un travail éditorial de trois semaines. Rien dans cet audit ne suggère que les résultats eux-mêmes soient fragiles : les quatre intervalles de confiance contiennent zéro, aucune correction pour tests multiples ne laisse survivre un résultat, et le rapport le dit. Ce qui manque n'est pas la rigueur, c'est la finition — et, pour un document destiné à orienter une politique publique, la finition fait partie de la rigueur.
+Les conditions 1 à 6 sont mécaniques et peuvent être levées en une quinzaine de jours. La septième est un travail éditorial de trois semaines. Rien dans cet audit ne suggère que les résultats eux-mêmes soient fragiles : les quatre intervalles de confiance contiennent zéro, aucune correction pour tests multiples ne laisse survivre un résultat, et le rapport le dit. Ce qui manque n'est pas la rigueur, c'est la finition — et, pour un document destiné à orienter une politique publique, la finition fait partie de la rigueur.
 
 ## F.4 Ce que l'audit recommande de ne pas faire
 
@@ -1136,7 +1142,7 @@ Trois tentations doivent être écartées.
 | Fichier | Contenu |
 |---|---|
 | `Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.docx` | Le présent rapport, en format bureautique (version de diffusion) |
-| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : synthèse chiffrée, 78 décisions, 66 appariements, 40 images, 22 recommandations |
+| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : synthèse chiffrée, 16 contrôles d'identité, 78 décisions, 66 appariements, 40 images, 25 recommandations |
 | `audit/reconciliation.csv` | 66 appariements testés automatiquement : onglet, légende, nombre de lignes, nombre de valeurs comparées, nombre de divergences, premiers exemples |
 | `audit/figures.csv` | Inventaire des figures : légende, image, dimensions, densité d'encre, encre sur les bords gauche et droit, nombre d'images par figure |
 | `audit/data_partC.py` | Les 78 décisions de tri, avec diagnostic, destination et justification |
@@ -1175,8 +1181,12 @@ Chaque recommandation comporte quatorze champs obligatoires : (1) identifiant ; 
 | REC-020 | Repondération de second niveau et publication des poids | Majeur | 1,5 | 2 |
 | REC-021 | Règle de calcul de la co-couverture de la cascade | Majeur | 0,5 | 2 |
 | REC-022 | Table de décision de la grille des cas, EMD alignées | Bloquant | 1 | 1 |
+| REC-023 | Règle d'ajustement des tableaux de zone | Bloquant | 1 | 2 |
+| REC-024 | Nommer le tableau 12 (unités ayant changé) | Majeur | 0,25 | 3 |
+| REC-025 | Grille réelle de l'indice de fonctionnalité des CAC | Majeur | 0,5 | 2 |
+| REC-026 | Chapitre 8 : ni gradient, ni effet sur l'équité | Bloquant | 2 | 3 |
 
-**Répartition :** 9 recommandations bloquantes, 13 majeures, 0 mineure. Charge totale chiffrée hors rédaction : 29 jours-personne.
+**Répartition :** 12 recommandations bloquantes, 13 majeures, 0 mineure. Charge totale chiffrée hors rédaction : 32,5 jours-personne.
 
 ## Annexe 4 — Fichiers audités et empreintes
 
@@ -1372,3 +1382,185 @@ Le verdict ne change pas : **le rapport n'est pas diffusable en l'état.** Trois
 Un élément l'allège en revanche, et il faut le dire : la colonne d'effectifs du tableau 60 se reproduit exactement, ce qui écarte l'hypothèse d'un tableau fabriqué et ramène le problème à une pièce non livrée (la table des poids). De même, le chaînage des conditionnelles de la cascade est exact à sa première étape, et les p du tableau 38 sont correctement rendus. L'audit retire donc un grief et en ajoute deux, dans la même mouvement : c'est ce que doit faire une seconde passe.
 
 Le nombre de recommandations passe de dix-neuf à vingt-deux (une bloquante et deux majeures supplémentaires) ; la charge chiffrée hors rédaction, de vingt-cinq à vingt-neuf jours-personne. Le récapitulatif de l'annexe 3 et le plan de correction de la partie F.2 intègrent déjà ces ajouts.
+---
+
+# PARTIE H — Troisième passe : contrôles d'identité arithmétique et de cohérence des intervalles
+
+*Cette partie poursuit la logique des précédentes : elle ne répète rien, elle vérifie ce qui ne l'avait pas été. Trois des contrôles ont infirmé un soupçon antérieur, quatre ont produit des constats nouveaux. Tous sont reproductibles à partir des onglets cités.*
+
+## H.1 La divergence des tableaux de zone est localisée : elle porte sur l'ajustement, non sur l'écart
+
+Les tableaux 21, 22, 54 et 55 présentent, pour chaque zone, une « évolution ajustée » et un « écart à la moyenne provinciale ». La partie B avait établi que l'évolution ajustée diverge du classeur dans 10 zones sur 16 (P1) et 9 sur 16 (P2), sans que l'écart à la moyenne provinciale soit testé. Le contrôle d'identité règle la question.
+
+**L'identité « écart = évolution ajustée − moyenne provinciale » est respectée dans les deux fichiers.** Sur les 128 cellules concernées (4 tableaux × 16 zones × 2 colonnes), la règle de calcul est vérifiée 64 fois sur 64 dans le classeur et 64 fois sur 64 dans le rapport (tolérance 0,15 point, qui couvre l'arrondi d'affichage et le fait que la moyenne provinciale est recalculée sur les zones du tableau).
+
+**Conséquence : la divergence n'est pas une faute de recopie, c'est un changement de méthode d'ajustement.** Si le rapport avait recopié l'évolution ajustée du classeur et recalculé l'écart, l'identité serait rompue dans un des deux documents. Elle ne l'est nulle part. Le rapport a donc recalculé **les deux** colonnes à partir d'un ajustement différent, ce qui déplace mécaniquement l'écart à la moyenne provinciale.
+
+| Tableau | Colonne « évolution ajustée » | Colonne « écart à la moyenne » |
+|---|---|---|
+| 21 (P1, corps) | 10 zones sur 16 divergent | 11 zones sur 16 divergent |
+| 54 (P2, annexe D) | 9 zones sur 16 divergent | 8 zones sur 16 divergent |
+| 22 (P3, corps) | 0 | 0 |
+| 55 (P4, annexe D) | 0 | 0 |
+| **Total** | **19 / 64** | **19 / 64** |
+
+**Ce que cela change pour la correction.** La recommandation REC-006 n'a pas à « corriger des valeurs » : elle doit **écrire la règle d'ajustement et la publier en note** des tableaux 21 et 54, puis régénérer les deux colonnes. Une note de trois lignes — modèle utilisé, covariables, niveau d'ajustement — suffit à rendre les 38 cellules reproductibles. C'est la correction la moins coûteuse du dossier et l'une des plus rentables : elle concerne les deux seuls tableaux où le lecteur peut situer une zone par rapport à sa province.
+
+> **REC-023 — Écrire la règle d'ajustement des tableaux de zone et régénérer les deux colonnes** *(bloquant)*
+
+| Champ | Contenu |
+|---|---|
+| 1. Identifiant | REC-023 |
+| 2. Constat | Les colonnes « évolution ajustée » et « écart à la moyenne provinciale » divergent du classeur dans 19 zones sur 64 chacune, alors que l'identité arithmétique qui les lie est respectée dans les deux fichiers : l'ajustement a été recalculé, non recopié. |
+| 3. Preuve | Tableaux 28, 71, 29 et 72 du document Word ; `T19_16_zones_P1` à `P4` colonnes H, I, J ; test d'identité J = I − moyenne provinciale (64/64 dans chaque fichier). |
+| 4. Axe | 3 — réconciliation |
+| 5. Criticité | Bloquant |
+| 6. Cause probable | Un modèle d'ajustement différent entre l'export du 15 octobre et la rédaction du 19 octobre, sans note de méthode. |
+| 7. Effet | 38 cellules publiées ne peuvent pas être reproduites ; le lecteur ne peut pas situer une zone dans sa province. |
+| 8. Recommandation | Ajouter en note des tableaux 21, 22, 54 et 55 : modèle, covariables, niveau d'ajustement, et la règle de calcul de l'écart ; régénérer les deux colonnes depuis la sortie unique. Ne pas modifier les valeurs à la main. |
+| 9. Modalité | Producteur ; note de tableau + régénération. |
+| 10. Livrable | 4 tableaux v2 + note d'ajustement. |
+| 11. Effort | 1 jour-personne. |
+| 12. Dépendance | REC-006 (même exécution). |
+| 13. Clôture | 128/128 cellules identiques au classeur ; note présente en bas des 4 tableaux. |
+| 14. Statut | Ouvert. |
+
+## H.2 Les tableaux d'unités appariées se réconcilient exactement — et cela précise ce qu'est le tableau 22
+
+Trois contrôles de cohérence, tous concluants, qui n'avaient pas été faits.
+
+**Le tableau 11 (mouvements) se réconcilie avec le tableau 4 (appariement).** Les effectifs se somment à 306 CAC appariés (159 dans le bras témoin, 147 dans le bras intervention) et 91 aires CODESA (46 et 45). Ce sont exactement les chiffres du bilan d'appariement. Les pourcentages somment à 100 (à 0,1 point près pour les CODESA témoins, arrondi). Aucune unité perdue, aucun double comptage.
+
+**Le tableau 12 (unités en progression et régression) contient exactement les unités qui ont bougé.** Ses 249 lignes se décomposent en 189 CAC et 60 CODESA. Or 189 = 52 + 53 (CAC témoins) + 33 + 51 (CAC intervention) et 60 = 9 + 20 (CODESA témoins) + 12 + 19 (CODESA intervention) : la somme exacte des dégradations et améliorations du tableau 11. **Le tableau 12 n'omet aucune unité stable : il ne prétend pas les lister.** Le libellé du tableau devrait le dire (« unités ayant changé de catégorie »), car le lecteur qui compare 249 à 397 unités appariées conclut à un manque.
+
+**Aucun doublon, aucune incohérence de calcul dans la liste nominative.** Les 249 unités sont uniques, et la colonne de mouvement égale exactement la différence entre les deux passages dans les 249 cas.
+
+> **REC-024 — Nommer le tableau 12 pour ce qu'il est** *(majeur)*
+
+| Champ | Contenu |
+|---|---|
+| 1. Identifiant | REC-024 |
+| 2. Constat | Le tableau 12 liste 249 unités (189 CAC, 60 CODESA), soit exactement les unités ayant changé de catégorie ; son intitulé ne le dit pas et 148 unités stables du tableau 11 n'y figurent pas. |
+| 3. Preuve | `T22_unites_progression_regressi` (249 lignes, 0 doublon, delta exact 249/249) ; `T21_mouvements_unites` (306 CAC et 91 CODESA, total 397). |
+| 4. Axe | 2 — définition |
+| 5. Criticité | Majeur |
+| 6. Cause probable | Intitulé hérité du script de sélection (les unités stables sont filtrées en amont). |
+| 7. Effet | Le lecteur croit à une liste incomplète ou à une perte d'unités. |
+| 8. Recommandation | Renommer : « Unités appariées ayant changé de catégorie entre T0 et T1 (les 148 unités stables ne figurent pas dans cette liste) » ; publier l'agrégat par bras et par organe dans le corps, la liste nominative en annexe. |
+| 9. Modalité | Auteur ; deux lignes de titre et de note. |
+| 10. Livrable | Tableau 12 v2 + renvoi au tableau 11. |
+| 11. Effort | 0,25 jour-personne. |
+| 12. Dépendance | Aucune. |
+| 13. Clôture | L'intitulé et la note mentionnent les unités stables ; 249 + 148 = 397. |
+| 14. Statut | Ouvert. |
+
+## H.3 La règle de progression n'est pas uniforme : cinq CAC sortent de la grille des neuf critères
+
+Le rapport énonce une règle simple : une unité progresse si son évolution atteint un critère, soit 11,1 points pour les CAC (9 critères) et 14,3 pour les CODESA (7 critères). La vérification confirme la règle pour les CODESA — **60 évolutions sur 60 sont des multiples exacts de 14,3** — et pour l'essentiel des CAC (184 sur 189 sont des multiples de 11,1). Mais cinq CAC font exception, tous dans le bras témoin :
+
+| Zone | s0 | s1 | Évolution | Mouvement attribué |
+|---|---:|---:|---:|---|
+| Tunda | 44,4 | 27,8 | −16,7 | Dégradation |
+| Lodja | 72,2 | 100,0 | +27,8 | Amélioration |
+| Minga | 22,2 | 50,0 | +27,8 | Amélioration |
+| Nyantende | 61,1 | 77,8 | +16,7 | Amélioration |
+| Nyantende | 50,0 | 69,4 | +19,4 | Amélioration |
+
+Les valeurs 27,8 ; 50,0 ; 69,4 et 72,2 ne sont pas des multiples de 11,1. Elles sont en revanche toutes des multiples de 2,78, soit un trente-sixième : la grille réelle de l'indice est donc plus fine qu'un critère, ou le nombre de critères applicables varie d'une unité à l'autre. Dans les deux cas, **l'affirmation « un critère = 11,1 points » est fausse pour ces cinq unités**, et leur classement est fragile : une évolution de 16,7 points est comptée comme une amélioration au même titre qu'une évolution de 33,3.
+
+L'incidence est faible (5 unités sur 189, soit 2,6 %) et ne déplace aucun résultat agrégé. Elle intéresse néanmoins la reproductibilité : un lecteur qui recalcule le tableau 11 à partir des scores individuels ne retrouvera pas les mêmes effectifs, et un évaluateur qui applique la règle littéralement classera la zone de Tunda différemment.
+
+> **REC-025 — Décrire la grille réelle de l'indice de fonctionnalité des CAC** *(majeur)*
+
+| Champ | Contenu |
+|---|---|
+| 1. Identifiant | REC-025 |
+| 2. Constat | 5 CAC sur 189 présentent des scores qui ne sont pas des multiples de 11,1 (27,8 ; 50,0 ; 69,4 ; 72,2) et des évolutions de 16,7 et 19,4 points, incompatibles avec la règle « un critère = 11,1 points ». |
+| 3. Preuve | `T22_unites_progression_regressi` (5 unités, toutes dans le bras témoin) ; `T21_mouvements_unites` (effectifs) ; § 1.3 du rapport. |
+| 4. Axe | 2 — définition |
+| 5. Criticité | Majeur |
+| 6. Cause probable | Indice construit sur 36 unités élémentaires (2,78 points chacune) ou nombre de critères applicables variable selon l'unité. |
+| 7. Effet | La règle de progression est appliquée avec un pas qui n'est pas celui de l'indice pour 2,6 % des CAC ; le tableau 11 n'est pas recalculable à l'identique. |
+| 8. Recommandation | Décrire la grille élémentaire de l'indice (nombre d'items, pondération, traitement des items manquants) ; exprimer la règle de progression dans cette grille (« au moins quatre unités élémentaires ») plutôt qu'en points ; signaler le cas de Tunda si le classement change. |
+| 9. Modalité | Producteur + auteur ; une note de méthode de cinq lignes. |
+| 10. Livrable | § 1.3 v2 + note du tableau 11. |
+| 11. Effort | 0,5 jour-personne. |
+| 12. Dépendance | REC-007 (dictionnaire). |
+| 13. Clôture | La grille élémentaire est décrite et la règle exprimée dans cette grille ; les 5 unités sont classées conformément à la règle écrite. |
+| 14. Statut | Ouvert. |
+
+## H.4 Le chapitre de l'équité ne peut pas conclure : gradient non monotone et intervalles contenant zéro
+
+Deux constats, tirés de deux onglets que le rapport publie comme figures (14 et 15 du dossier d'images, tableaux sources `T37_gradient_quintiles` et `T36_concentration_erreygers`).
+
+**Le « gradient » par quintile n'est monotone que dans 9 séries sur 32.** Sur les 32 séries (8 indicateurs × 2 bras × 2 passages), 23 présentent au moins un changement de sens, avec des amplitudes qui atteignent 20,9 points. Les trois plus fortes ruptures sont :
+
+| Indicateur | Bras | Passage | Profil par quintile (Q1 → Q5) | Amplitude maximale d'un segment |
+|---|---|---|---:|---:|
+| Au moins quatre CPN (%) | Intervention | T0 | voir figure 14 | **20,9 points** |
+| Accouchement en structure (%) | Intervention | T0 | — | 18,2 points |
+| Enfant vacciné déclaré (%) | Intervention | T1 | — | 17,3 points |
+
+Une série qui monte puis redescend n'est pas un gradient : c'est une relation non monotone, qui demande une autre lecture (seuil, effet de composition, ou absence de relation). Intituler la figure « Gradient par quintile de niveau de vie » engage une conclusion que 72 % des séries n'autorisent pas. Le titre doit être neutre (« Niveau des indicateurs par quintile de niveau de vie ») et le commentaire doit dire ce que ces ruptures impliquent.
+
+**La moitié des indices de concentration ne se distinguent pas de zéro.** Sur les 24 indices d'Erreygers (6 indicateurs × 2 bras × 2 passages), **12 ont un intervalle de confiance qui contient zéro**. Le rapport ne peut donc pas affirmer qu'une inégalité existait, ni qu'elle a diminué, pour la moitié des indicateurs examinés. Et lorsque les intervalles excluent zéro, les évolutions vont dans le même sens dans les deux bras :
+
+| Indicateur | Témoin T0 → T1 | Intervention T0 → T1 | Lecture |
+|---|---|---|---|
+| Exposition aux agents | +0,107 → +0,013 | +0,180 → +0,054 | baisse dans les deux bras |
+| Connaissances | +0,091 → +0,112 | +0,233 → +0,133 | hausse chez les témoins, baisse chez les intervention |
+| Enfant vacciné déclaré | +0,138 → −0,005 | +0,309 → +0,158 | baisse dans les deux bras |
+| Carnet vu | +0,035 → −0,058 | +0,255 → +0,075 | baisse dans les deux bras |
+| Amène les enfants à la pesée | +0,170 → +0,066 | +0,348 → +0,269 | baisse dans les deux bras |
+| Accouchement en structure | +0,163 → +0,191 | +0,207 → +0,145 | hausse chez les témoins, baisse chez les intervention |
+
+Onze des douze séries diminuent, dans les deux bras, avec des amplitudes comparables. La lecture honnête est celle d'une **réduction générale de l'inégalité entre les deux passages, commune aux zones d'intervention et aux zones témoins** — donc non attribuable au programme. Le seul indicateur où le bras intervention se distingue nettement est l'exposition aux agents (−0,126 contre −0,094), mais l'écart entre les deux bras est inférieur à la largeur des intervalles.
+
+> **REC-026 — Réécrire le chapitre 8 : pas de gradient, pas d'effet sur l'équité** *(bloquant)*
+
+| Champ | Contenu |
+|---|---|
+| 1. Identifiant | REC-026 |
+| 2. Constat | 23 séries de quintiles sur 32 ne sont pas monotones (jusqu'à 20,9 points de rupture) ; 12 indices d'Erreygers sur 24 ont un IC contenant zéro ; 11 des 12 séries évoluent dans le même sens dans les deux bras. |
+| 3. Preuve | `T37_gradient_quintiles` (160 lignes → 32 séries) ; `T36_concentration_erreygers` (24 lignes) ; figure 14 et tableau 32. |
+| 4. Axe | 2 — définition ; axe 5 |
+| 5. Criticité | Bloquant |
+| 6. Cause probable | Titre de figure choisi avant lecture des séries ; chapitre non rédigé. |
+| 7. Effet | Le rapport s'apprête à affirmer un gradient social et un effet du programme sur l'équité que les données ne soutiennent pas. |
+| 8. Recommandation | Renommer la figure 14 ; publier les séries avec leurs intervalles et le n par quintile ; conclure, au chapitre 8, à une réduction générale de l'inégalité commune aux deux bras et à l'absence d'effet différentiel démontrable ; signaler explicitement les 12 indices dont l'IC contient zéro. |
+| 9. Modalité | Auteur ; rédaction du chapitre 8 à partir des deux onglets. |
+| 10. Livrable | Chapitre 8 rédigé + figure 14 renommée et complétée. |
+| 11. Effort | 2 jours-personne. |
+| 12. Dépendance | REC-012 (figure 14), REC-017 (rédaction). |
+| 13. Clôture | 0 emploi du mot « gradient » sans mention de la non-monotonie ; les 12 IC contenant zéro sont signalés. |
+| 14. Statut | Ouvert. |
+
+## H.5 Un constat qui n'en est pas un : les effectifs du tableau 31
+
+La partie B signalait un écart d'effectifs entre le rapport et le classeur pour le tableau 31 (hétérogénéité) : 1 900 et 3 091 dans le rapport, 2 285 et 3 428 dans le classeur. La vérification des sommes explique l'écart et **le retire du passif**.
+
+| Sous-groupe | n — rapport | n — classeur |
+|---|---:|---:|
+| Niveau de vie : quintiles 1-2 | 1 900 | 2 285 |
+| Niveau de vie : quintiles 3-5 | 3 091 | 3 428 |
+| **Somme** | **4 991** | **5 713** |
+
+La somme des effectifs du rapport vaut exactement 4 991, l'échantillon d'analyse du tableau 20 ; celle du classeur vaut exactement 5 713, l'ensemble des observations des deux passages. Les deux sont justes, mais ils ne comptent pas la même population. Le rapport est donc cohérent avec lui-même ; c'est l'onglet qui calcule ses effectifs sur la base complète. La correction n'est pas de changer les chiffres, mais de nommer la base dans la note du tableau — ce qui rejoint REC-008 (distinguer base, enquêtés, analysés) et doit être ajouté à sa clôture.
+
+## H.6 Un défaut de forme confirmé : les libellés de catégories du tableau 9
+
+L'onglet `T16_categories_organes` emploie deux genres pour les mêmes catégories : « Non fonctionnel / Partiellement fonctionnel / Fonctionnel » pour les CODESA, « Non fonctionnelle / Partiellement fonctionnelle / Fonctionnelle » pour les CAC. Le tableau 9 du rapport reprend les deux séries telles quelles. Ce n'est pas une erreur de fond, mais dans un tableau qui compte 24 lignes et dont la lecture repose entièrement sur la comparaison des catégories, deux orthographes pour une même catégorie suffisent à faire douter de l'homogénéité du codage. À corriger lors de la passe de normalisation des libellés (REC-007).
+
+## H.7 Ce que la troisième passe change au décompte
+
+| Élément | Effet |
+|---|---|
+| Écarts chiffrés | 33 → **35** (deux constats nouveaux : grille de progression, écarts de zone localisés) |
+| Griefs retirés | **2** (effectifs du tableau 31 ; 38 cellules de zone expliquées par un changement de méthode et non par une erreur) |
+| Constats nouveaux | 6 (localisation de la divergence de zone ; réconciliation exacte des tableaux 11, 12 et 4 ; grille de progression ; non-monotonie du gradient ; indices d'Erreygers ; libellés de catégories) |
+| Recommandations | 22 → **25** |
+| Charge chiffrée hors rédaction | 29 → **32,5 jours-personne** |
+
+**Le verdict de fond ne change pas** : le rapport n'est pas diffusable en l'état. Mais la nature du travail restant se précise. Sur les six conditions posées en partie F, trois sont désormais documentées au point de devenir des tâches d'écriture plutôt que des enquêtes : l'ajustement des zones (une note de trois lignes), la grille de progression (une note de cinq lignes), la réconciliation des effectifs (une mention de base de calcul). Le dossier n'est plus dans une phase de diagnostic : il est dans une phase de correction, et la liste des corrections est close pour l'essentiel.
+
+Deux points restent ouverts et ne peuvent pas être clos par l'audit : la **reproductibilité** (les scripts ne sont pas livrés, REC-014) et la **rédaction** (douze chapitres sans texte, REC-017). Ce sont les deux seules conditions qui exigent un travail de fond, et ce sont elles qui déterminent la date de diffusion.

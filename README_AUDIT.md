@@ -2,15 +2,15 @@
 
 Audit indépendant, en français, du rapport `Rapport_resultats_quantitatifs_Phase2_SACO_Mpox_maquette_2026-10-19 (1).docx`
 confronté à son classeur de sorties `SACO_Phase2_Tableaux_2026-10-15 (2).xlsx`.
-Seconde passe : 20 octobre 2026.
+Troisième passe : 20 octobre 2026 (parties A à H).
 
 ## Documents
 
 | Fichier | Contenu |
 |---|---|
-| `Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.md` | Rapport d'audit complet (source, ~29 000 mots, 48 tableaux) : synthèse, méthode en 8 étapes, parties A à G, 22 blocs de recommandation à 14 champs, plan de correction en 3 vagues |
+| `Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.md` | Rapport d'audit complet (source, ~32 700 mots, 58 tableaux) : synthèse, méthode en 9 étapes, parties A à H, 25 blocs de recommandation à 14 champs, plan de correction en 3 vagues |
 | `Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.docx` | Même rapport, mis en forme pour diffusion |
-| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : synthèse chiffrée, 78 décisions de tri par onglet, 66 appariements, 40 images, 22 recommandations |
+| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : 6 onglets — synthèse chiffrée, 16 contrôles d'identité, 78 décisions de tri, 66 appariements, 40 images, 25 recommandations |
 
 ## Pièces justificatives (`audit/`)
 
@@ -21,7 +21,7 @@ Seconde passe : 20 octobre 2026.
 | `figures.py` | Inventaire des figures (dimensions, densité d'encre, encre sur les bords, doublons) ; produit `figures.csv` |
 | `data_partC.py` | Les 78 décisions de tri (diagnostic, destination, justification) |
 | `make_docx.py` | Conversion Markdown → DOCX du rapport |
-| `p0.md` … `pG.md` | Sources du rapport, section par section |
+| `p0.md` … `pH.md` | Sources du rapport, section par section |
 
 ## Reproduire
 
@@ -31,7 +31,7 @@ python3 -m venv .venv && .venv/bin/pip install python-docx openpyxl pillow
 .venv/bin/python audit/reconcile.py         # audit/reconciliation.csv
 .venv/bin/python audit/figures.py           # audit/figures.csv
 cat audit/p0.md audit/pA.md audit/pB.md audit/pC.md audit/pC_table.md \
-    audit/pD.md audit/pE.md audit/pF.md audit/pG.md > Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.md
+    audit/pD.md audit/pE.md audit/pF.md audit/pG.md audit/pH.md > Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.md
 .venv/bin/python audit/make_docx.py         # version bureautique
 ```
 

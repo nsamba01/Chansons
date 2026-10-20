@@ -71,7 +71,7 @@ La correction ne peut pas être conduite chapitre par chapitre : elle dépend d'
 |---:|---|---|---|
 | 5 | Régénérer les sorties d'estimation avec version et journal | REC-005, REC-014 | Traçabilité |
 | 6 | Recalculer les 5 tableaux « trois volets », les 7 matrices de sensibilité et le tableau 41 | REC-006 | Supprime 4 modes de défaillance |
-| 7 | Recalculer les colonnes « évolution ajustée » des tableaux 21 et 54 | REC-006 | Supprime 19 zones divergentes |
+| 7 | Recalculer les colonnes « évolution ajustée » des tableaux 21 et 54 et écrire la règle | REC-006, REC-023 | Supprime 38 cellules divergentes |
 | 8 | Décrire la repondération de second niveau et livrer la table de poids | REC-020 | Explique un rapport de poids de 11 |
 | 9 | Documenter la co-couverture, puis reconstruire la figure 15 et reprendre 7 figures | REC-012, REC-021 | Appareil graphique fiable et cascade vérifiable |
 | 10 | Régénérer les 16 fiches de zone sur le modèle refondu | REC-013 | Support décentralisé utilisable |
@@ -88,7 +88,7 @@ La correction ne peut pas être conduite chapitre par chapitre : elle dépend d'
 | 16 | Commenter la variante « sans L6_recent » | REC-011 | Honnêteté de la sensibilité |
 | 17 | Passer les six contrôles automatiques | REC-015 | Zéro défaut mécanique |
 
-Le total des charges chiffrées dans les blocs de recommandation s'élève à **29 jours-personne** hors rédaction des chapitres, laquelle représente l'essentiel du reste à faire et ne peut pas être estimée par l'auditeur sans connaître l'ambition éditoriale du commanditaire. À titre indicatif, un rapport de 40 à 60 pages rédigé à partir de ce matériau demande 15 à 25 jours d'auteur.
+Le total des charges chiffrées dans les blocs de recommandation s'élève à **32,5 jours-personne** hors rédaction des chapitres, laquelle représente l'essentiel du reste à faire et ne peut pas être estimée par l'auditeur sans connaître l'ambition éditoriale du commanditaire. À titre indicatif, un rapport de 40 à 60 pages rédigé à partir de ce matériau demande 15 à 25 jours d'auteur.
 
 > **REC-016 — Exécuter le tri des 78 onglets** *(majeur)*
 
@@ -156,9 +156,10 @@ Le total des charges chiffrées dans les blocs de recommandation s'élève à **
 3. **Une correspondance traçable** entre chaque tableau et un onglet existant (REC-001, REC-014).
 4. **Un appareil graphique sans figure vide ni titre tronqué** (REC-012).
 5. **Une grille des cas reproductible** — lettre identique dans le rapport et dans le classeur, EMD identiques, table de décision publiée (REC-022).
-6. **Un texte rédigé** — au minimum le résumé exécutif, les chapitres 6, 11 et 13, et l'annexe A (REC-017).
+6. **Un chapitre 8 conforme à ses données** — pas de gradient affirmé sans monotonie, pas d'effet sur l'équité sans différence entre bras (REC-026).
+7. **Un texte rédigé** — au minimum le résumé exécutif, les chapitres 6, 8, 11 et 13, et l'annexe A (REC-017).
 
-Les conditions 1 à 5 sont mécaniques et peuvent être levées en une douzaine de jours. La sixième est un travail éditorial de trois semaines. Rien dans cet audit ne suggère que les résultats eux-mêmes soient fragiles : les quatre intervalles de confiance contiennent zéro, aucune correction pour tests multiples ne laisse survivre un résultat, et le rapport le dit. Ce qui manque n'est pas la rigueur, c'est la finition — et, pour un document destiné à orienter une politique publique, la finition fait partie de la rigueur.
+Les conditions 1 à 6 sont mécaniques et peuvent être levées en une quinzaine de jours. La septième est un travail éditorial de trois semaines. Rien dans cet audit ne suggère que les résultats eux-mêmes soient fragiles : les quatre intervalles de confiance contiennent zéro, aucune correction pour tests multiples ne laisse survivre un résultat, et le rapport le dit. Ce qui manque n'est pas la rigueur, c'est la finition — et, pour un document destiné à orienter une politique publique, la finition fait partie de la rigueur.
 
 ## F.4 Ce que l'audit recommande de ne pas faire
 
@@ -179,7 +180,7 @@ Trois tentations doivent être écartées.
 | Fichier | Contenu |
 |---|---|
 | `Audit_rapport_quantitatif_SACO_Phase2_2026-10-20.docx` | Le présent rapport, en format bureautique (version de diffusion) |
-| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : synthèse chiffrée, 78 décisions, 66 appariements, 40 images, 22 recommandations |
+| `Audit_SACO_Phase2_annexes_2026-10-20.xlsx` | Annexes techniques : synthèse chiffrée, 16 contrôles d'identité, 78 décisions, 66 appariements, 40 images, 25 recommandations |
 | `audit/reconciliation.csv` | 66 appariements testés automatiquement : onglet, légende, nombre de lignes, nombre de valeurs comparées, nombre de divergences, premiers exemples |
 | `audit/figures.csv` | Inventaire des figures : légende, image, dimensions, densité d'encre, encre sur les bords gauche et droit, nombre d'images par figure |
 | `audit/data_partC.py` | Les 78 décisions de tri, avec diagnostic, destination et justification |
@@ -218,8 +219,12 @@ Chaque recommandation comporte quatorze champs obligatoires : (1) identifiant ; 
 | REC-020 | Repondération de second niveau et publication des poids | Majeur | 1,5 | 2 |
 | REC-021 | Règle de calcul de la co-couverture de la cascade | Majeur | 0,5 | 2 |
 | REC-022 | Table de décision de la grille des cas, EMD alignées | Bloquant | 1 | 1 |
+| REC-023 | Règle d'ajustement des tableaux de zone | Bloquant | 1 | 2 |
+| REC-024 | Nommer le tableau 12 (unités ayant changé) | Majeur | 0,25 | 3 |
+| REC-025 | Grille réelle de l'indice de fonctionnalité des CAC | Majeur | 0,5 | 2 |
+| REC-026 | Chapitre 8 : ni gradient, ni effet sur l'équité | Bloquant | 2 | 3 |
 
-**Répartition :** 9 recommandations bloquantes, 13 majeures, 0 mineure. Charge totale chiffrée hors rédaction : 29 jours-personne.
+**Répartition :** 12 recommandations bloquantes, 13 majeures, 0 mineure. Charge totale chiffrée hors rédaction : 32,5 jours-personne.
 
 ## Annexe 4 — Fichiers audités et empreintes
 
