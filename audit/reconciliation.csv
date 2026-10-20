@@ -1,0 +1,67 @@
+idx,sheet,caption,word_rows,excel_rows,word_nums,excel_nums,compared,divergent,first
+3,T10_emd_par_bras,"Tableau 1. Effet minimal détectable (EMD) par indicateur, sur les 16 zones, sans",24,24,254,254,254,32,"[(20, 32.1, 31.8), (22, 7.5, 7.7), (23, 6.4, 6.3)]"
+4,T05_dates_collecte,"Tableau 2. Dates de collecte par base et par passage, entretiens hors fenêtre",11,11,90,50,50,46,"[(2, 2022.0, 44828.0), (3, -9.0, 46305.0), (4, -24.0, 13.0)]"
+5,T05_dates_collecte,"Tableau 2. Dates de collecte par base et par passage, entretiens hors fenêtre",1,11,1,50,1,1,"[(0, 1.0, 0.0)]"
+6,T02_realisation_zs,"Tableau 3. Entretiens réalisés par zone de santé, questionnaire et passage",18,18,216,216,216,0,[]
+7,T01_bilan_appariement,Tableau 4. Bilan de l'appariement territorial entre T0 et T1 (villages déclarés ,8,8,31,31,31,0,[]
+8,T11_profil_menages,"Tableau 5. Profil des ménages par bras et par passage, avec différences standard",22,22,190,190,190,8,"[(10, 30.13, 30.11), (11, 31.56, 31.11), (12, 0.18, 0.13)]"
+9,T12_profil_acteurs,Tableau 6. Profil des agents et des organes par bras et par passage,13,13,100,100,100,0,[]
+10,T12_profil_acteurs,Tableau 6. Profil des agents et des organes par bras et par passage,1,13,5,100,5,5,"[(0, 1.0, 0.0), (1, 385.0, 0.0), (2, 306.0, 0.0)]"
+11,T14_cac_3volets,"Tableau 7. Indicateurs CAC : valeurs à T0 et T1 et écart, ensemble et par bras",46,46,517,520,517,510,"[(7, 9.0, 3.0), (8, 0.0, 9.0), (9, -100.0, 0.0)]"
+12,T14_cod_3volets,"Tableau 8. Indicateurs CODESA : valeurs à T0 et T1 et écart, ensemble et par bra",34,34,388,388,388,66,"[(19, -8.2, -9.4), (20, 17.8, 18.9), (33, -15.0, -19.1)]"
+13,T16_categories_organes,"Tableau 9. Répartition des CAC et des CODESA par catégorie de fonctionnalité, pa",25,25,72,72,72,0,[]
+14,T20_transitions_matrices,Tableau 10. Matrices de transition des catégories de fonctionnalité entre T0 et ,37,37,74,74,74,0,[]
+15,T21_mouvements_unites,"Tableau 11. Unités appariées en dégradation, stabilité et amélioration, par bras",5,5,24,24,24,0,[]
+17,T14_reco_3volets,"Tableau 12. Indicateurs RECO : valeurs à T0 et T1 et écart, ensemble et par bras",58,58,652,658,652,645,"[(7, 6.0, 4.0), (8, 0.0, 6.0), (9, -100.0, 0.0)]"
+18,T47_reco_professionnalisation_c,Tableau 13. Composantes de la professionnalisation des RECO par bras et par pass,37,37,213,213,213,0,[]
+19,T49_reco_charge_menages,"Tableau 14. RECO : nombre de ménages couverts (déclaré), par bras et par passage",5,5,36,36,36,0,[]
+20,T14_asc_3volets,"Tableau 15. Indicateurs ASC : valeurs à T0 et T1 et écart, ensemble et par bras",25,25,280,280,280,48,"[(16, -6.4, -7.6), (17, 22.0, 23.2), (27, -19.4, -23.7)]"
+21,T48_asc_prime_montant,"Tableau 16. ASC : montant déclaré de la prime de motivation (USD), parmi ceux qu",5,5,27,27,27,0,[]
+22,T50_logistique,"Tableau 17. Logistique et intrants des agents et des CAC, par bras et par passag",29,29,149,149,149,0,[]
+23,T50_logistique,"Tableau 17. Logistique et intrants des agents et des CAC, par bras et par passag",1,29,2,149,2,2,"[(0, 50.0, 95.0), (1, 1.0, 0.0)]"
+24,T14_men_3volets,"Tableau 18. Indicateurs ménages : valeurs à T0 et T1 et écart, ensemble et par b",97,97,1087,1150,1087,1073,"[(7, 0.0, 1.0), (8, -100.0, 0.0), (9, 63.7, -100.0)]"
+25,T23_repondération_T1,Tableau 19. Évolutions brutes et après repondération de T1 sur la composition de,17,17,91,91,91,38,"[(7, 69.5, 70.0), (9, 4.2, 4.8), (14, 69.9, 69.2)]"
+26,T23_repondération_T1,Tableau 19. Évolutions brutes et après repondération de T1 sur la composition de,1,17,0,91,0,0,[]
+27,T25_tableau_des_effets,Tableau 20. Tableau des effets : indicateurs primaires et indices de domaine (re,10,10,178,170,170,154,"[(4, 2.0, 16.0), (5, 16.0, 95.0), (7, 0.0, 2.0)]"
+28,T19_16_zones_P1,Tableau 21. Indice d'exposition des ménages aux agents (0-100) : valeurs par zon,17,17,116,116,116,21,"[(9, 4.8, 4.7), (16, -0.8, -0.6), (17, -0.7, -0.4)]"
+29,T19_16_zones_P3,"Tableau 22. Fonctionnalité des CAC, 9 critères (0-100) : valeurs par zone de san",17,17,116,116,116,0,[]
+30,T28_placebos,Tableau 23. Tests placebo : différence de différences à 16 points sur des caract,7,7,43,43,43,5,"[(24, 31.6, 31.2), (25, -0.6, -0.3), (26, -3.1, -2.7)]"
+31,T27_divergence_tendances,Tableau 24. Sensibilité des effets à une divergence de tendance pré-existante en,21,21,101,101,101,55,"[(3, 7.9, 6.9), (5, 15.3, 13.3), (8, 1.4, 3.1)]"
+32,T26_unites_appariees,Tableau 25. Effets estimés sur les unités territoriales appariées : différence d,3,3,24,24,24,0,[]
+33,T29_effets_secondaires,Tableau 26. Indicateurs secondaires : différence de différences à 16 points (exp,71,71,666,666,666,0,[]
+35,T30_differences_premieres_aires,Tableau 27. Différences premières au niveau de l'aire de santé : variation des r,18,18,130,130,130,21,"[(26, 0.31, 0.3), (28, 0.61, 0.6), (31, 0.16, 0.17)]"
+36,T31_associations_transversales,Tableau 28. Associations transversales entre la fonctionnalité des organes / la ,10,10,90,80,80,77,"[(2, 0.0, 1.0), (3, 1.0, 3.0), (4, 3.0, 2.89)]"
+37,T32_variance_niveaux,Tableau 29. Décomposition de la variance des résultats ménages par niveau (aire ,9,9,66,54,54,49,"[(2, 289.176, 289.38), (3, 26.567, 26.317), (4, 689.029, 685.475)]"
+38,T34_capacites_extrants_reco,Tableau 30. Visites à domicile déclarées par les RECO sur trois mois selon la pr,4,4,14,14,14,0,[]
+39,T34_capacites_extrants_reco,Tableau 30. Visites à domicile déclarées par les RECO sur trois mois selon la pr,1,4,0,14,0,0,[]
+40,T35_heterogeneite,Tableau 31. Hétérogénéité pré-spécifiée de l'effet sur P1 et P2 : DiD par sous-g,21,21,117,118,117,102,"[(0, 95.0, 16.0), (1, 1.0, 95.0), (3, -2.0, 1.0)]"
+41,T36_concentration_erreygers,Tableau 32. Inégalités sociales : indice de concentration d'Erreygers par bras e,25,25,113,113,113,1,"[(41, 0.077, 0.071)]"
+42,T38_genre,"Tableau 33. Part des femmes parmi les agents, les membres et les répondants des ",26,26,76,76,76,0,[]
+43,T38_genre,"Tableau 33. Part des femmes parmi les agents, les membres et les répondants des ",1,26,0,76,0,0,[]
+44,T40_continuum_conditionnel,Tableau 34. Continuum maternel : probabilités de franchir chaque étape condition,5,5,24,24,24,0,[]
+45,T42_enfant_malade_multinomial,Tableau 35. Première réaction devant l'enfant malade : probabilités prédites (%),5,5,24,24,24,12,"[(3, 26.6, 26.5), (7, 58.9, 58.6), (9, 19.4, 19.6)]"
+46,T43_enfant_malade_deux_parties,"Tableau 36. Recours pour l'enfant malade en deux parties : consultation ou non, ",21,21,121,121,121,44,"[(4, 3.44, 3.43), (14, 1.98, 2.0), (15, 1.42, 1.44)]"
+47,T44_vaccination_declare_vu,"Tableau 37. Vaccination de l'enfant : déclaration et carnet vu par province, bra",21,21,80,80,80,0,[]
+48,T46_mpox_acceptabilite,Tableau 38. Acceptation déclarée du vaccin Mpox (K8) : rapports de cotes ajustés,15,15,64,64,64,38,"[(1, 4.35, 4.38), (2, 2.87, 2.9), (3, 6.57, 6.62)]"
+49,T46_mpox_acceptabilite,Tableau 38. Acceptation déclarée du vaccin Mpox (K8) : rapports de cotes ajustés,1,15,0,64,0,0,[]
+50,T51_normes_psn,Tableau 39. Conformité aux normes du PSN SACO (% d'unités conformes) par bras et,21,21,89,89,89,0,[]
+51,T52_indice_conformite,Tableau 40. Indice de conformité des agents aux normes du PSN SACO (part des nor,9,9,49,49,49,0,[]
+52,T52_indice_conformite,Tableau 40. Indice de conformité des agents aux normes du PSN SACO (part des nor,1,9,1,49,1,1,"[(0, 2030.0, 95.0)]"
+53,T54_synthese_sensibilite,"Tableau 41. Synthèse des matrices de sensibilité : variantes, étendue des estima",8,8,52,52,52,22,"[(11, 17.0, 18.0), (12, 17.0, 18.0), (14, -0.7, -0.5)]"
+54,T53_sensibilite_P1,Tableau 42. Matrice de sensibilité : Indice d'exposition des ménages aux agents ,22,23,98,98,98,89,"[(1, 2.0, 16.0), (2, 2.9, 1.9), (4, 10.3, 8.3)]"
+55,T53_sensibilite_P2,Tableau 43. Matrice de sensibilité : Indice de connaissances déclarées des ménag,21,22,92,92,92,83,"[(1, 2.0, 16.0), (2, -3.6, -1.9), (3, -10.8, -8.8)]"
+56,T53_sensibilite_P3,"Tableau 44. Matrice de sensibilité : Fonctionnalité des CAC, 9 critères (0-100)",24,24,105,105,105,10,"[(1, 2.0, 16.0), (2, 0.1, 0.3), (3, -6.2, -6.0)]"
+57,T53_sensibilite_P4,"Tableau 45. Matrice de sensibilité : Professionnalisation des RECO, 6 items (0-1",19,19,76,76,76,10,"[(1, 2.0, 16.0), (2, -3.2, -2.4), (3, -12.9, -11.9)]"
+63,T06_fiches_indicateurs,"Tableau 46. Dictionnaire des indicateurs : définition, base, registre et populat",89,89,231,231,231,0,[]
+64,T07_poids_indices_domaine,Tableau 47. Indices de domaine : composantes ; poids de la variante d'Anderson (,23,24,53,55,53,20,"[(22, 0.218, 0.177), (25, 0.191, 0.139), (27, 0.234, 0.195)]"
+65,T08_fiabilite_indices,Tableau 48. Fiabilité des indices réflexifs de connaissances (ménages),9,9,56,56,56,0,[]
+66,T09_irt_signes_danger,Tableau 49. Paramètres IRT approchés (2PL via corrélations tétrachoriques) des 1,19,19,72,72,72,0,[]
+67,T03_asc_couverture,Tableau 50. Couverture des ASC par province et par passage,5,5,14,14,14,0,[]
+68,T04_qualite_manquants,"Tableau 51. Valeurs manquantes des variables d'analyse, par base et par passage",59,59,442,442,442,0,[]
+69,T55_manquants_primaires,Tableau 52. Part de valeurs manquantes des indicateurs primaires et des covariab,21,21,72,72,72,12,"[(3, 12.3, 12.4), (7, 11.7, 11.9), (11, 13.6, 14.8)]"
+70,T15_men_3volets_province,"Tableau 53. Indicateurs ménages par province : T0, T1 et écart",129,129,1447,1531,1447,1434,"[(7, 0.0, 1.0), (8, -100.0, 0.0), (9, 57.9, -100.0)]"
+71,T19_16_zones_P2,"Tableau 54. Indice de connaissances déclarées des ménages (citations, 0-100) : v",17,17,116,116,116,21,"[(4, 23.7, 20.4), (8, 7.0, 10.3), (9, -6.4, -4.5)]"
+72,T19_16_zones_P4,"Tableau 55. Professionnalisation des RECO, 6 items (0-100) : valeurs par zone de",17,17,116,116,116,0,[]
+73,T39_continuum_maternel,"Tableau 56. Continuum maternel : CPN1, CPN4+, accouchement en structure, consult",33,33,185,185,185,16,"[(160, 26.6, 26.8), (161, 16.8, 17.8), (162, 36.4, 35.9)]"
+74,T45_mpox_cap,"Tableau 57. Mpox : connaissances, attitudes et sources d'information, par bras e",153,121,921,697,697,117,"[(577, 9.0, 0.0), (578, 8.0, 66.9), (579, 0.0, 59.2)]"
+76,T17_ucodesa,Tableau 59. UCODESA enquêtées : identification et composition,31,31,60,60,60,0,[]
