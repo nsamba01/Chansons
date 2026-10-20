@@ -1,0 +1,806 @@
+[
+ {
+  "kind": "chapitre",
+  "label": "Résumé exécutif",
+  "page": 2,
+  "chapter": "Résumé exécutif"
+ },
+ {
+  "kind": "section",
+  "label": "Les quatre résultats confirmatoires",
+  "page": 4,
+  "chapter": "Résumé exécutif"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 1. Forêt des effets sur les quatre indicateurs primaires : DiD ",
+  "page": 5,
+  "chapter": "Résumé exécutif"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 2. Conformité aux normes du PSN SACO à T0 et T1 par bras.",
+  "page": 6,
+  "chapter": "Résumé exécutif"
+ },
+ {
+  "kind": "chapitre",
+  "label": "1. Méthodologie",
+  "page": 7,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.1 Devis et ce que mesure l'effet",
+  "page": 8,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.2 Trois registres de lecture",
+  "page": 8,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.3 Indicateurs, EMD et seuils de pertinence",
+  "page": 9,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 1. Effet minimal détectable (EMD) par indicateur, sur les 16 z",
+  "page": 10,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.4 Estimation et inférence à seize grappes",
+  "page": 11,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.5 Données, corrections et pondération",
+  "page": 11,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 2. Dates de collecte par base et par passage, entretiens hors ",
+  "page": 11,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "section",
+  "label": "1.6 Chaîne d'analyse, écarts assumés au protocole et référentiels",
+  "page": 12,
+  "chapter": "1. Méthodologie"
+ },
+ {
+  "kind": "chapitre",
+  "label": "2. Profil des échantillons et comparabilité",
+  "page": 13,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 3. Entretiens réalisés par zone de santé, questionnaire et pas",
+  "page": 14,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 4. Bilan de l'appariement territorial entre T0 et T1 (villages",
+  "page": 14,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 3. ASC enquêtés par zone de santé à T0 et T1.",
+  "page": 15,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 5. Profil des ménages par bras et par passage, avec différence",
+  "page": 15,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 4. Équilibre entre bras à T0 et T1 : différences standardisées ",
+  "page": 17,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 6. Profil des agents et des organes par bras et par passage",
+  "page": 17,
+  "chapter": "2. Profil des échantillons et comparabilité"
+ },
+ {
+  "kind": "chapitre",
+  "label": "3. Gouvernance communautaire",
+  "page": 18,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 7. Indicateurs CAC : valeurs à T0 et T1 et écart, ensemble et ",
+  "page": 19,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 8. Indicateurs CODESA : valeurs à T0 et T1 et écart, ensemble ",
+  "page": 20,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 9. Répartition des CAC et des CODESA par catégorie de fonction",
+  "page": 22,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 10. Matrices de transition des catégories de fonctionnalité en",
+  "page": 23,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 11. Unités appariées en dégradation, stabilité et amélioration",
+  "page": 24,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 5. Transitions des CODESA entre catégories de fonctionnalité, a",
+  "page": 25,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 6. Transitions des CAC entre catégories de fonctionnalité, vill",
+  "page": 26,
+  "chapter": "3. Gouvernance communautaire"
+ },
+ {
+  "kind": "chapitre",
+  "label": "4. Acteurs communautaires",
+  "page": 27,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 12. Indicateurs RECO : valeurs à T0 et T1 et écart, ensemble e",
+  "page": 28,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 13. Composantes de la professionnalisation des RECO par bras e",
+  "page": 30,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 14. RECO : nombre de ménages couverts (déclaré), par bras et p",
+  "page": 31,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 15. Indicateurs ASC : valeurs à T0 et T1 et écart, ensemble et",
+  "page": 32,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 16. ASC : montant déclaré de la prime de motivation (USD), par",
+  "page": 33,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 17. Logistique et intrants des agents et des CAC, par bras et ",
+  "page": 33,
+  "chapter": "4. Acteurs communautaires"
+ },
+ {
+  "kind": "chapitre",
+  "label": "5. Ménages",
+  "page": 35,
+  "chapter": "5. Ménages"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 7. Évolution T0 → T1 des quatre primaires par bras (moyennes de",
+  "page": 36,
+  "chapter": "5. Ménages"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 18. Indicateurs ménages : valeurs à T0 et T1 et écart, ensembl",
+  "page": 36,
+  "chapter": "5. Ménages"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 19. Évolutions brutes et après repondération de T1 sur la comp",
+  "page": 40,
+  "chapter": "5. Ménages"
+ },
+ {
+  "kind": "chapitre",
+  "label": "6. Effet de l'intervention",
+  "page": 41,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 20. Tableau des effets : indicateurs primaires et indices de d",
+  "page": 42,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 8. Forêt des effets sur les indices de domaine.",
+  "page": 43,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 9. Distributions de permutation des quatre primaires (1 296 att",
+  "page": 43,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 10. Évolutions ajustées par zone de santé, par province et par ",
+  "page": 44,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 21. Indice d'exposition des ménages aux agents (0-100) : valeu",
+  "page": 44,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 22. Fonctionnalité des CAC, 9 critères (0-100) : valeurs par z",
+  "page": 45,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "section",
+  "label": "6.1 Dossier de plausibilité des tendances parallèles",
+  "page": 46,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 23. Tests placebo : différence de différences à 16 points sur ",
+  "page": 46,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 24. Sensibilité des effets à une divergence de tendance pré-ex",
+  "page": 46,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 25. Effets estimés sur les unités territoriales appariées : di",
+  "page": 47,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "section",
+  "label": "6.2 Indicateurs secondaires (exploratoire)",
+  "page": 47,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 26. Indicateurs secondaires : différence de différences à 16 p",
+  "page": 47,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 11. DiD à 16 points sur les indicateurs secondaires, avec corre",
+  "page": 51,
+  "chapter": "6. Effet de l'intervention"
+ },
+ {
+  "kind": "chapitre",
+  "label": "7. Mécanismes et analyse systémique",
+  "page": 51,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 27. Différences premières au niveau de l'aire de santé : varia",
+  "page": 52,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 28. Associations transversales entre la fonctionnalité des org",
+  "page": 52,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 29. Décomposition de la variance des résultats ménages par niv",
+  "page": 53,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 12. Effets aléatoires d'aire sur l'exposition des ménages (P1),",
+  "page": 54,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 30. Visites à domicile déclarées par les RECO sur trois mois s",
+  "page": 54,
+  "chapter": "7. Mécanismes et analyse systémique"
+ },
+ {
+  "kind": "chapitre",
+  "label": "8. Équité",
+  "page": 55,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 31. Hétérogénéité pré-spécifiée de l'effet sur P1 et P2 : DiD ",
+  "page": 56,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 13. DiD à 16 points par sous-groupe pré-spécifié et test global",
+  "page": 57,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 32. Inégalités sociales : indice de concentration d'Erreygers ",
+  "page": 57,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 14. Gradient par quintile de niveau de vie, par bras et par pas",
+  "page": 59,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 33. Part des femmes parmi les agents, les membres et les répon",
+  "page": 59,
+  "chapter": "8. Équité"
+ },
+ {
+  "kind": "chapitre",
+  "label": "9. Thématiques",
+  "page": 61,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "section",
+  "label": "9.1 Continuum maternel",
+  "page": 62,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 15. Cascade CPN1 → CPN4+ → accouchement en structure → consulta",
+  "page": 62,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 34. Continuum maternel : probabilités de franchir chaque étape",
+  "page": 62,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "section",
+  "label": "9.2 Recours pour l'enfant malade",
+  "page": 63,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 16. Première réaction devant l'enfant malade, par bras et par p",
+  "page": 63,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 35. Première réaction devant l'enfant malade : probabilités pr",
+  "page": 63,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 36. Recours pour l'enfant malade en deux parties : consultatio",
+  "page": 63,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "section",
+  "label": "9.3 Vaccination déclarée et carnet vu",
+  "page": 64,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 17. Vaccination déclarée (évidé) et carnet vu (plein), par prov",
+  "page": 65,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 37. Vaccination de l'enfant : déclaration et carnet vu par pro",
+  "page": 65,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "section",
+  "label": "9.4 Mpox : connaissances, attitudes, acceptabilité",
+  "page": 66,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 18. Connaissances et attitudes sur la Mpox, par item, bras et p",
+  "page": 67,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 38. Acceptation déclarée du vaccin Mpox (K8) : rapports de cot",
+  "page": 67,
+  "chapter": "9. Thématiques"
+ },
+ {
+  "kind": "chapitre",
+  "label": "10. Alignement avec le PSN SACO 2025-2030",
+  "page": 68,
+  "chapter": "10. Alignement avec le PSN SACO 2025-2030"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 39. Conformité aux normes du PSN SACO (% d'unités conformes) p",
+  "page": 69,
+  "chapter": "10. Alignement avec le PSN SACO 2025-2030"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 40. Indice de conformité des agents aux normes du PSN SACO (pa",
+  "page": 70,
+  "chapter": "10. Alignement avec le PSN SACO 2025-2030"
+ },
+ {
+  "kind": "chapitre",
+  "label": "11. Robustesse et limites",
+  "page": 71,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 41. Synthèse des matrices de sensibilité : variantes, étendue ",
+  "page": 72,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 19. Courbes de spécification des quatre primaires.",
+  "page": 73,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "figure",
+  "label": "Figure 20. Estimations en retirant chaque zone à tour de rôle.",
+  "page": 73,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 42. Matrice de sensibilité : Indice d'exposition des ménages a",
+  "page": 73,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 43. Matrice de sensibilité : Indice de connaissances déclarées",
+  "page": 74,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 44. Matrice de sensibilité : Fonctionnalité des CAC, 9 critère",
+  "page": 75,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 45. Matrice de sensibilité : Professionnalisation des RECO, 6 ",
+  "page": 76,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "section",
+  "label": "11.1 Limites",
+  "page": 77,
+  "chapter": "11. Robustesse et limites"
+ },
+ {
+  "kind": "chapitre",
+  "label": "12. Synthèse conjointe par dynamique",
+  "page": 78,
+  "chapter": "12. Synthèse conjointe par dynamique"
+ },
+ {
+  "kind": "chapitre",
+  "label": "13. Discussion et recommandations",
+  "page": 80,
+  "chapter": "13. Discussion et recommandations"
+ },
+ {
+  "kind": "section",
+  "label": "13.1 Discussion",
+  "page": 81,
+  "chapter": "13. Discussion et recommandations"
+ },
+ {
+  "kind": "section",
+  "label": "13.2 Recommandations",
+  "page": 81,
+  "chapter": "13. Discussion et recommandations"
+ },
+ {
+  "kind": "chapitre",
+  "label": "Annexes",
+  "page": 82,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "A. Note de correction des valeurs de T0",
+  "page": 83,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "B. Indicateurs, indices et EMD",
+  "page": 83,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 46. Dictionnaire des indicateurs : définition, base, registre ",
+  "page": 83,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 47. Indices de domaine : composantes ; poids de la variante d'",
+  "page": 86,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 48. Fiabilité des indices réflexifs de connaissances (ménages)",
+  "page": 87,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 49. Paramètres IRT approchés (2PL via corrélations tétrachoriq",
+  "page": 88,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "C. Qualité des données",
+  "page": 89,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 50. Couverture des ASC par province et par passage",
+  "page": 89,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 51. Valeurs manquantes des variables d'analyse, par base et pa",
+  "page": 89,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 52. Part de valeurs manquantes des indicateurs primaires et de",
+  "page": 91,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "D. Tableaux complémentaires",
+  "page": 92,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 53. Indicateurs ménages par province : T0, T1 et écart",
+  "page": 92,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 54. Indice de connaissances déclarées des ménages (citations, ",
+  "page": 97,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 55. Professionnalisation des RECO, 6 items (0-100) : valeurs p",
+  "page": 98,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 56. Continuum maternel : CPN1, CPN4+, accouchement en structur",
+  "page": 99,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 57. Mpox : connaissances, attitudes et sources d'information, ",
+  "page": 100,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 58. UCODESA : fonctions et pièces déclarées, par bras et par p",
+  "page": 106,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 59. UCODESA enquêtées : identification et composition",
+  "page": 108,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "tableau",
+  "label": "Tableau 60. Repondération de T1 : taille effective de Kish et étendue ",
+  "page": 110,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "E. Fiches par zone de santé",
+  "page": 110,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Kibombo (Maniema)",
+  "page": 111,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Pangi (Maniema)",
+  "page": 113,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Kalima (Maniema)",
+  "page": 115,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Tunda (Maniema)",
+  "page": 117,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Kasansa (Kasaï-Oriental)",
+  "page": 119,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Miabi (Kasaï-Oriental)",
+  "page": 121,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Citenge (Kasaï-Oriental)",
+  "page": 123,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Tshishimbi (Kasaï-Oriental)",
+  "page": 125,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Katako Kombe (Sankuru)",
+  "page": 127,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Ototo (Sankuru)",
+  "page": 129,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Lodja (Sankuru)",
+  "page": 131,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Minga (Sankuru)",
+  "page": 133,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Katana (Sud-Kivu)",
+  "page": 135,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Nyangezi (Sud-Kivu)",
+  "page": 137,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Nyantende (Sud-Kivu)",
+  "page": 139,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "Fiche de zone : Walungu (Sud-Kivu)",
+  "page": 141,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "F. Listes de contrôle",
+  "page": 143,
+  "chapter": "Annexes"
+ },
+ {
+  "kind": "section",
+  "label": "G. Catalogue des sorties",
+  "page": 143,
+  "chapter": "Annexes"
+ }
+]
